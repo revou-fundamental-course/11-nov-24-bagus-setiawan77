@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 2000px;
+}
+
+/* ============= NAVBAR ============= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 0.5rem 2rem;
+}
+
+.navbar .nav-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-shadow: 5px 6px 3px black;
+}
+
+.navbar .nav-logo span {
+  color: fuchsia;
+}
+
+.navbar .navbar_nav {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+}
+
+.navbar .navbar_nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  display: inline-flex;
+  margin: 0 1rem;
+  text-shadow: 3px 3px 3px black;
+}
+
+.navbar .navbar_nav a:hover {
+  color: fuchsia;
+}
+
+.navbar .navbar_nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.2rem solid black;
+  transform: scaleX(0);
+  transition: 0.3s ease;
+}
+
+.navbar .navbar_nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar_extra {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar_extra a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 0 1.5rem;
+  text-shadow: 5px 6px 3px black;
+}
+
+.navbar .navbar_extra a:hover {
+  color: fuchsia;
+  transition: 0.5s ease;
+}
+
+#nav-menu {
+  display: none;
+}
+
+/* ============= HERO ============= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/img/astronaut.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 10%,
+    rgba(255, 255, 255, 0) 80%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  line-height: 5rem;
+  text-shadow: 3px 3px 3px black;
+}
+
+.hero .content h1 span {
+  color: fuchsia;
+}
+
+.hero .content p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  text-shadow: 4px 4px 2px black;
+  mix-blend-mode: difference;
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 3px white;
+}
+
+/* ============= ABOUT SECTION ============= */
+.about {
+  padding: 5.5rem 7% 1.4rem;
+}
+
+.about h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about h2 span {
+  color: fuchsia;
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .row .about_vid {
+  flex: 1 1 45rem;
+}
+
+.about .row .about_vid video {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  text-align: center;
+  align-content: center;
+}
+
+.about .row .content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: fuchsia;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.about .row .content p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  margin: 10px 0px;
+}
+
+/* ============= MEDIA QUERIES ============= */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #nav-menu {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .navbar_nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    width: 30rem;
+    height: 35vh;
+    border-radius: 100px 0px 0px 100px;
+    transition: 0.3s ease;
+  }
+
+  .navbar .navbar_nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar_nav a {
+    color: black;
+    display: block;
+    justify-self: center;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    text-shadow: none;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
