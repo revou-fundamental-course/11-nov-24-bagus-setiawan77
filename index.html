@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <!-- Feather Icon -->
-    <!-- choose one -->
+
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
     <!-- CSS -->
@@ -29,7 +29,7 @@
         </div>
 
         <div class="navbar_extra">
-          <a href="#">Let's Travel</a>
+          <a href="#contact">Let's Travel</a>
           <a href="#" id="nav-menu"><i data-feather="menu"></i></a>
         </div>
       </nav>
@@ -46,7 +46,7 @@
         <article>
           <h1>Toward to <br><span>Infinity</span> and <span>Beyond</span></h1>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, atque.</p>
-          <a href="#" class="cta"> Plan a Trip</a>
+          <a href="#contact" class="cta"> Plan a Trip</a>
         </article>
       </main>
 
@@ -86,11 +86,11 @@
       <div class="row">
 
         <div class="destination_card">
-          <img src="assets/img/namek.jpg" alt="Planet Namek">
+          <img src="assets/img/namek.jpg" alt="Namek Planet">
 
           <article>
             <div class="card_content">
-              <h3 class="destination_card_title">Planet Namek</h3>
+              <h3 class="destination_card_title">Namek Planet</h3>
               <p class="destination_card_price">2.000$</p>
               <br>
               <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quisquam quod id, dolorem architecto maxime! Aliquid repudiandae architecto odio iste vel vitae quidem delectus animi.</h4>
@@ -99,11 +99,11 @@
         </div>
 
         <div class="destination_card">
-          <img src="assets/img/asgard.jpg" alt="Planet Asgard">
+          <img src="assets/img/asgard.jpg" alt="Asgard Planet">
 
           <article>
             <div class="card_content">
-              <h3 class="destination_card_title">Planet Asgard</h3>
+              <h3 class="destination_card_title"> Asgard Planet</h3>
               <p class="destination_card_price">3.000$</p>
               <br>
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos, dolorem porro iusto ipsam quas vitae ea, saepe molestias praesentium consequatur! Ea omnis obcaecati quia.</h4>
@@ -112,11 +112,11 @@
         </div>
 
         <div class="destination_card">
-          <img src="assets/img/cybertron.jpg" alt="Planet Cybertron">
+          <img src="assets/img/cybertron.jpg" alt="Cybertron Planet ">
 
           <article>
             <div class="card_content">
-              <h3 class="destination_card_title">Planet Cybertron</h3>
+              <h3 class="destination_card_title"> Cybertron Planet</h3>
               <p class="destination_card_price">4.000$</p>
               <br>
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quasi dolore provident at dolorum quis, rem aliquid blanditiis error illum ratione necessitatibus qui praesentium laudantium.</h4>
@@ -136,7 +136,70 @@
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, debitis?</p>
 
       <div class="row">
+        <div class="contact_img">
+          <img src="assets/img/namek2.jpg" alt="">
+          <p><i>"Amazing Trip to Namek planet and fighting with Goku and Friends"</i></p>
 
+          <div class="contact_review-box-container">
+            <div class="contact_review-box">
+              <div class="box-top">
+                <div class="profile">
+                  <div class="profile_img">
+                    <img src="/assets/img/astronaut.jpg" alt="">
+                  </div>
+                  <div class="username">
+                    <strong>Sparda</strong>
+                    <span>esparda@gmail.com</span>
+                  </div>
+
+                  <!-- REVIEWS -->
+                  <div class="reviews">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+        
+        <div class="contact_form">
+          <h1>Let's Plan The Trip</h1>
+          <form action="">
+
+            <div>
+              <label for="username-input">
+                <i data-feather="user"></i>
+              </label>
+              <input required type="text" name="username" id="username-input" placeholder="Username">
+            </div>
+
+            <div>
+              <label for="email-input">
+                <i data-feather="mail"></i>
+              </label>
+              <input required type="email" name="email" id="email-input" placeholder="Email">
+            </div>
+
+            <div>
+              <label for="destination-input">
+                <i data-feather="compass"></i>
+              </label>
+              <select name="destination" id="destination-input">
+                <option value="namek-planet">Namek Planet</option>
+                <option value="asgard-planet">Asgard Planet</option>
+                <option value="cybertron-planet">Cybertron Planet</option>
+              </select>
+            </div>
+
+            <button type="submit">Submit</button>
+
+          </form>
+
+        </div>
+        
       </div>
 
     </section>
@@ -144,12 +207,33 @@
 
     <!-- Contact Section End -->
 
+    <!-- Footer Section Start -->
+
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="https://github.com/bagus-setiawan77"><i data-feather="github"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#destination">Destination</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="https://github.com/bagus-setiawan77"> bagussetiawan.| &copy; 2024</a></p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
     <!-- Feather Icon -->
     <script>
       feather.replace();
     </script>
 
     <!-- JS -->
-     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>
