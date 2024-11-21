@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
-  min-height: 2000px;
+  min-height: 4000px;
 }
 
 /* ============= NAVBAR ============= */
@@ -186,6 +186,9 @@ body {
 
 .about .row .about_vid video {
   width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  object-position: center;
   border-radius: 100px;
 }
 
@@ -211,9 +214,106 @@ body {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   margin: 10px 0px;
+  padding: 0;
 }
 
+/* ============= DESTINATION SECTION ============= */
 
+.destination {
+  padding: 5.5rem 7% 1.4rem;
+}
+
+.destination h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.destination h2 span {
+  color: fuchsia;
+}
+
+.destination p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: auto;
+  max-width: 40rem;
+}
+
+.destination .row {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.destination .row .destination_card {
+  text-align: center;
+  width: 325px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 2rem;
+  background-color: #222222;
+  box-shadow: 1px 1px 4px white;
+}
+
+.destination .row .destination_card img {
+  width: 100%;
+  height: 180px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.destination .row .destination_card .card_content {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.destination .row .destination_card .destination_card_title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: fuchsia;
+}
+
+.destination .row .destination_card .destination_card_price {
+  font-weight: 600;
+}
+.destination .row .destination_card .card_content h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+/* ============= CONTACT SECTION ============= */
+
+.contact {
+  padding: 5.5rem 7% 1.4rem;
+}
+
+.contact h2 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact h2 span {
+  color: fuchsia;
+}
+
+.contact p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  text-align: center;
+  margin: auto;
+  max-width: 40rem;
+}
 
 /* ============= MEDIA QUERIES ============= */
 
@@ -243,7 +343,7 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
     width: 30rem;
-    height: 35vh;
+    height: 100vh;
     border-radius: 100px 0px 0px 100px;
     transition: 0.3s ease;
   }
@@ -260,6 +360,10 @@ body {
     padding: 0.5rem;
     font-size: 2rem;
     text-shadow: none;
+  }
+
+  .destination .row .destination_card .card_content h4 {
+    font-size: 1.4rem;
   }
 }
 

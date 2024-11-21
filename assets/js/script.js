@@ -1,18 +1,21 @@
+// ==========================================
+
 // Toggle class active
 
-const navbarNav = document.querySelector('.navbar_nav');
+const navbarNav = document.querySelector(".navbar_nav");
 // Ketika menu diklik
-document.querySelector('#nav-menu').onclick = () => {
-    navbarNav.classList.toggle('active');
+document.querySelector("#nav-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
 };
 
+// ==========================================
 
-// Klik diluar sidebar untuk menghilangkan nav
+// Klik diluar sidebar untuk menghilangkan navigasi bar
 
-const menu = document.querySelector('#nav-menu');
+const menu = document.querySelector("#nav-menu");
 
-document.addEventListener('click', function(e) {
-    if(!menu.contains(e.target) && !navbarNav.contains(e.target)){
-        navbarNav.classList.remove('active')
-    }
-})
+document.addEventListener("click", function (e) {
+  if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});
